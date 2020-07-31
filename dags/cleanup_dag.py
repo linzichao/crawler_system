@@ -25,7 +25,7 @@ args = {
 dag = DAG(
     dag_id='cleanup_version_1',
     default_args=args,
-    schedule_interval=None,
+    schedule_interval="@daily",
     tags=['test']
 )
 
